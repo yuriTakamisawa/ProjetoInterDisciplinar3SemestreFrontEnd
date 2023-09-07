@@ -1,0 +1,88 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o cabeçalho (header) */
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Espaçamento do logotipo */
+.logo {
+    margin: 10px 0; /* Adicione o espaçamento desejado aqui (5px no topo e 5px na parte inferior) */
+    margin-right: 30px; /* Espaçamento à direita do logotipo */
+}
+
+/* Estilos para o navbar principal */
+.navbar-list-principal {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando apenas os itens do menu secundário */
+.navbar-list-secundario {
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.navbar-item-secundario {
+    margin: 0;
+    padding: 5px 10px; /* Adicione espaçamento ao redor do texto do link */
+    border: 0.1px solid #E7E7E7; /* Adicione uma borda sólida de cor preta */
+    display: flex; /* Para alinhar a imagem e o texto lado a lado */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+}
+
+.navbar-item-secundario a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-item-secundario img {
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    width: 20px; /* Largura da imagem (ajuste conforme necessário) */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+
+
+
+/* Espaçamento à direita da segunda opção da lista de navegação */
+.navbar-item:nth-child(2) {
+    margin-right: 30px;
+}
+
+/* Espaçamento vertical das opções da lista de navegação */
+.navbar-item {
+    margin: 0 15px;
+    margin-top: 35px;
+}
+
+/* Estilos dos links na lista de navegação */
+.navbar-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos opcionais para mudar a aparência dos links quando o mouse estiver sobre eles */
+.navbar-item a:hover {
+    color: purple;
+}
+
