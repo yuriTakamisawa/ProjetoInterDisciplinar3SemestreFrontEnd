@@ -6,14 +6,16 @@
     <title>Quitanda frescor</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="/PI3SM/estilo.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
+        <!-- Cabeçalho com o logo e menu de navegação -->
         <nav class="navbar">
             <div class="navbar-principal">
+                <!-- Menu principal -->
                 <ul class="navbar-list-principal">
-                    <li class="navbar-item"><a href="#">INICIO</a></li>
+                    <li class="navbar-item"><a href="#">INÍCIO</a></li>
                     <li class="navbar-item"><a href="#">NOSSOS PRODUTOS</a></li>
                     <li class="logo"><img src="https://www.frutilamix.com.br/img/logo.png" alt="Logo"></li>
                     <li class="navbar-item"><a href="#">QUEM SOMOS</a></li>
@@ -21,6 +23,7 @@
                 </ul>
             </div>
             <div class="navbar-secundario">
+                <!-- Menu secundário com ícones -->
                 <ul class="navbar-list-secundario">
                     <li class="navbar-item-secundario">
                         <img src="/PI3SM/img/navbar-secundario-frutas.webp" alt="Ícone Frutas">
@@ -50,29 +53,53 @@
             </div>
         </nav>
     </header>
-<!--     <main class="container">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/PI3SM/img/slide2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/PI3SM/img/slide1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/PI3SM/img/slide3.jpg" class="d-block w-100" alt="...">
-              </div>
+
+    <main>
+        <!-- Carrossel de imagens -->
+        <div class="carrosel">
+            <div class="container" id="img">
+                <img src="https://www.frutilamix.com.br/img/section-slide/1/slide1.jpg" alt="slide 1">
+                <img src="https://www.frutilamix.com.br/img/section-slide/2/slide2.jpg" alt="slide 2">
+                <img src="https://www.frutilamix.com.br/img/section-slide/3/slide3.jpg" alt="slide 3">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </main> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        </div>
+
+        <!-- Título "Nossos produtos" e descrição -->
+        <div class="titulo-produtos">
+            <h1>Nossos produtos</h1>
+            <p>Escolha entre as diversas opções de Frutas, Verduras, Legumes, Bebidas, Mercearia e Não Alimentar, rigorosamente selecionadas e higienizadas, ideais para quem busca combinações saudáveis e frescas em formatos práticos para consumo.</p>
+        </div>
+
+        <!-- Lista de produtos -->
+        <div class="produtos">
+            <ul>
+                <li>
+                    <img src="caminho_para_imagem.jpg" alt="Frutas">
+                    Frutas
+                </li>
+                <!-- Adicione mais produtos com imagens conforme necessário -->
+                <li>
+                    <img src="caminho_para_imagem.jpg" alt="Verduras">
+                    Verduras
+                </li>
+                <li>
+                    <img src="caminho_para_imagem.jpg" alt="Legumes">
+                    Legumes
+                </li>
+                <li>
+                    <img src="caminho_para_imagem.jpg" alt="Bebidas">
+                    Bebidas
+                </li>
+                <li>
+                    <img src="caminho_para_imagem.jpg" alt="Mercearia">
+                    Mercearia
+                </li>
+                <li>
+                    <img src="caminho_para_imagem.jpg" alt="Não Alimentar">
+                    Não Alimentar
+                </li>
+            </ul>
+        </div>
+    </main>
 </body>
 </html>

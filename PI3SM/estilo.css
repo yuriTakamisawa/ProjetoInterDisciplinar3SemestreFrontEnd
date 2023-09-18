@@ -16,7 +16,7 @@ header {
 
 /* Espaçamento do logotipo */
 .logo {
-    margin: 10px 0; /* Adicione o espaçamento desejado aqui (5px no topo e 5px na parte inferior) */
+    margin: 10px 0; /* Adicione o espaçamento desejado aqui  */
     margin-right: 30px; /* Espaçamento à direita do logotipo */
 }
 
@@ -86,3 +86,64 @@ header {
     color: purple;
 }
 
+/* Carrosel */
+.carrosel{
+    overflow: hidden;
+    height: 475px;
+    width: 1345px;
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.carrosel img{
+    object-fit: cover;
+    height: 475px;
+    width: 1345px;
+}
+
+/* Titulo nossos produtos */
+.titulo-produtos {
+    margin-top: 50px; /* Espaço entre o carrossel e o título "Nossos Produtos" */
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px; /* Tamanho do título "Nossos Produtos" */
+    text-align: center; /* Centralizar o texto */
+    color: #93C547;
+    font-weight: 750; /* Pode variar de 100 a 900, sendo 400 normal e 700 bold */
+}
+
+.titulo-produtos p{
+    max-width: 800px; /* Largura máxima do parágrafo */
+    margin: 0 auto; /* Centralizar o parágrafo na página */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 24px; /* Tamanho dos itens da lista de produtos */
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+/* Nossos produtos */
+.produtos ul {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se não houver espaço */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Centralizar os itens horizontalmente */
+}
+
+.produtos li {
+    font-size: 24px; /* Tamanho dos itens da lista de produtos */
+    margin: 10px; /* Espaço entre os itens da lista */
+}
