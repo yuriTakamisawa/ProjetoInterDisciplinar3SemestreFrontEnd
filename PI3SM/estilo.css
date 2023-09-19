@@ -90,7 +90,7 @@ header {
 .carrosel{
     overflow: hidden;
     height: 475px;
-    width: 1345px;
+    width: 100%;
 }
 
 .container{
@@ -100,9 +100,8 @@ header {
 }
 
 .carrosel img{
-    object-fit: cover;
     height: 475px;
-    width: 1345px;
+    width: 100%;
 }
 
 /* Titulo nossos produtos */
