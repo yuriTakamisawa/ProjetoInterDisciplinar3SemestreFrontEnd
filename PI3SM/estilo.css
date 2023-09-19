@@ -87,22 +87,18 @@ header {
 }
 
 /* Carrosel */
-.carrosel{
-    overflow: hidden;
-    height: 475px;
-    width: 100%;
-}
-
 .container{
     display: flex;
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
+    max-width: 100%;
 }
 
-.carrosel img{
-    height: 475px;
-    width: 100%;
+.container img{
+    max-width: 100%;
 }
+
+
 
 /* Titulo nossos produtos */
 .titulo-produtos {
