@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* Estilos para o cabeçalho (header) */
@@ -101,23 +101,24 @@ header {
 
 
 /* Titulo nossos produtos */
-.titulo-produtos {
+.titulo-produto {
     margin-top: 50px; /* Espaço entre o carrossel e o título "Nossos Produtos" */
     text-align: center;
 }
 
-h1 {
+.titulo-produto h1 {
     font-size: 36px; /* Tamanho do título "Nossos Produtos" */
     text-align: center; /* Centralizar o texto */
     color: #93C547;
     font-weight: 750; /* Pode variar de 100 a 900, sendo 400 normal e 700 bold */
 }
 
-.titulo-produtos p{
+.titulo-produto p{
     max-width: 800px; /* Largura máxima do parágrafo */
     margin: 0 auto; /* Centralizar o parágrafo na página */
 }
 
+/* Nossos produtos */
 ul {
     list-style-type: none;
     padding: 0;
@@ -128,7 +129,6 @@ li {
     font-size: 24px; /* Tamanho dos itens da lista de produtos */
     margin-bottom: 10px; /* Espaço entre os itens da lista */
 }
-/* Nossos produtos */
 .produtos ul {
     display: flex;
     flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se não houver espaço */
@@ -142,3 +142,81 @@ li {
     font-size: 24px; /* Tamanho dos itens da lista de produtos */
     margin: 10px; /* Espaço entre os itens da lista */
 }
+
+/* Ajustando a posição da imagem,titulo do produto e o botão */
+.produtos img{
+    max-width: 120px;
+    object-fit: contain;
+}
+
+.nome-produto, .preco, button {
+    margin: 0; /* Remove a margem padrão */
+}
+/* Centralizando a imagem em relação ao titulo */
+.produto-item img{
+    margin-left: 9px;
+}
+
+
+
+/* Ajustando o titulo do produto */
+.nome-produto {
+    font-size: 25px; /* Tamanho da fonte em pixels */
+    font-weight: normal; /* Remove o negrito */
+    color: #7A7A7A; /* Cor #7A7A7A (cinza) */
+}
+/* Ajustando o preco do produto */
+.preco{
+font-size: 18px; /* Tamanho da fonte em pixels */
+color: black; /* Cor #7A7A7A (cinza) */
+}
+/* Estilizando o botão */
+.encomendar {
+    width: 153px;
+    height: 40px;
+    background-color: #D4EAE2;
+    color: #24A076;
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+    &:hover {
+        background-color: #24A076;
+        color: white;
+    }
+    border-radius: 0.25rem;
+    border: none;
+    margin-top: 20px;
+}
+
+.rodape {
+    background-color: #E8E8E8;
+    padding: 20px;
+    text-align: center;
+}
+
+.texto-rodape p {
+    margin: 10px 0;
+}
+
+.divisoria {
+    width: 30px;
+    border: 1px solid #000;
+    margin: 0 10px; /* Ajustado a margem */
+    display: inline-block; /* Para ficar na mesma linha */
+}
+
+.construido-por {
+    display: inline-block; /* Para ficar na mesma linha */
+}
+
+.whatsapp{
+    max-width: 120px;
+    align-self:flex-end;
+}
+
+
+
+
+
+
+
+
