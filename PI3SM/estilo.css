@@ -180,9 +180,6 @@ header {
     border-radius: 15px;
     cursor: pointer;
 }
-.popup-cadastro .close-btn-cadastro:hover {
-    color: purple; /* Altera a cor do texto para roxo quando hover */
-}
 
 .popup-cadastro .form h2 {
     text-align: center;
@@ -456,7 +453,6 @@ color: black; /* Cor #7A7A7A (cinza) */
 
 .whatsapp{
     max-width: 120px;
-    align-self:flex-end;
 }
 
 
