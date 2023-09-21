@@ -122,10 +122,15 @@ header {
     border: none;
     outline: none;
     font-size: 15px;
-    background: #222;
-    color: #f5f5f5;
+    background: rgb(212, 234, 226);
+    color: #24A076;
     border-radius: 10px;
     cursor: pointer;
+    font-weight: bold;
+}
+.popup .form .form-element button:hover {
+    background: #24A076; /* Altera o background para #24A076 quando hover */
+    color: white; /* Altera a cor do texto para branco quando hover */
 }
 
 .popup .form .form-element a{
@@ -140,15 +145,105 @@ header {
     margin-left: 50px;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Cor escura para o overlay */
-    display: none; /* Inicialmente oculto */
+/* POPUP DE CADASTRO */
+.popup-cadastro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 300px;
+    padding: 20px 30px;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 208ms, opacity 200ms ease-in-out 8ms, transform 20ms ease-in-out 0ms;
 }
+
+.popup-cadastro.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 208ms, opacity 200ms ease-in-out 8ms, transform 20ms ease-in-out 0ms;
+}
+
+.popup-cadastro .close-btn-cadastro{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #000;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.popup-cadastro .close-btn-cadastro:hover {
+    color: purple; /* Altera a cor do texto para roxo quando hover */
+}
+
+.popup-cadastro .form h2 {
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+.popup-cadastro .form .form-element {
+    margin: 15px 0px;
+}
+
+.popup-cadastro .form .form-element label {
+    font-size: 14px;
+    color: #222;
+}
+
+.popup-cadastro .form .form-element input[type="text"],
+.popup-cadastro .form .form-element input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.popup-cadastro .form .form-element input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.popup-cadastro .form .form-element button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: rgb(212, 234, 226);
+    color: #24A076;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.popup-cadastro .form .form-element button:hover {
+    background: #24A076; /* Altera o background para #24A076 quando hover */
+    color: white; /* Altera a cor do texto para branco quando hover */
+}
+.popup-cadastro .form .form-element a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.popup-cadastro .popup-logo {
+    margin-left: 50px;
+}
+/* DROPDOWN */
   .usuario:hover .dropdown {
     display: block;
     z-index: 11; /* Ajuste o valor do z-index para ficar sobreposto à imagem */
