@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quitanda frescor</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="/PI3SM/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
 </head>
 <body>
+   
     <header>
         <!-- Cabeçalho com o logo e menu de navegação -->
         <nav class="navbar">
             <div class="navbar-principal">
                 <!-- Menu principal -->
                 <ul class="navbar-list-principal">
-                    <li class="navbar-item"><a href="#">INÍCIO</a></li>
-                    <li class="navbar-item"><a href="#">NOSSOS PRODUTOS</a></li>
                     <li class="logo"><img src="https://www.frutilamix.com.br/img/logo.png" alt="Logo"></li>
+                    <li class="navbar-item"><a href="#">INÍCIO</a></li>
                     <li class="navbar-item"><a href="#">QUEM SOMOS</a></li>
-                    <li class="navbar-item"><a href="#">RESERVE SEU PEDIDO</a></li>
+                    <li class="usuario">
+                        <img src="img/usuário.png" alt="usuario">
+                        <ul class="dropdown">
+                          <li><a href="#">Login</a></li>
+                          <li><a href="#">Cadastrar-se</a></li>
+                        </ul>
+                        <li class="carrinho"><img src="img/carrinho-de-compras-de-design-xadrez.png" alt="Logo"></li>
+                      </li>
+                    </ul>
                 </ul>
             </div>
             <div class="navbar-secundario">
@@ -147,16 +154,43 @@
             </ul>
         </div>
     </main>
+<!-- popup login -->
+    <div class="popup">
+        <div class="close-btn">
+            &times;</div>
+                <div class="form">
+                    <img class="popup-logo" src="https://www.frutilamix.com.br/img/logo.png" alt="logo">
+                    <h2>Entrar</h2>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Coloque o seu email">
+                    </div>
+                    <div class="form-element">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" placeholder="Coloque a sua senha">
+                    </div>
+                    <div class="form-element">
+                        <label for="lembrar">Lembrar dados</label>
+                        <input type="checkbox" id="lembrar" placeholder="Coloque a sua senha">
+                    </div>
+                    <div class="form-element">
+                        <button>Entrar</button>
+                    </div>
+                    <div class="form-element">
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+            </div>
+    </div>
+</body>
+  <!--   Rodapé -->
     <footer class="rodape">
         <div class="texto-rodape">
             <p>&#169; Quitanda Frescor 2023</p>
             <div class="divisoria"></div>
-          <p>Construído por estudantes da Fatec Zona Leste</p>
-          <img class="whatsapp" src="img/whatsapp.png" alt="contato do whatsapp">
+            <p>Construído por estudantes da Fatec Zona Leste</p>
+            <img class="whatsapp" src="img/whatsapp.png" alt="contato do whatsapp">
         </div>
     </footer>
-    
-    
-    
-</body>
 </html>
+
+
