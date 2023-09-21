@@ -47,7 +47,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
   }
 
-  /* Estilizando o popup entrar */
+  /* Estilizando o Popup entrar */
 .popup{
     position: absolute;
     top: 50%;
@@ -359,6 +359,7 @@ header {
 .titulo-produto p{
     max-width: 800px; /* Largura máxima do parágrafo */
     margin: 0 auto; /* Centralizar o parágrafo na página */
+    color: #494B51;
 }
 
 /* Nossos produtos */
